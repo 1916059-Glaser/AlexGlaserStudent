@@ -1,5 +1,5 @@
 ---
-layout: Cayman
+layout: default
 title: About Me Alexander Glaser
 ---
 
