@@ -2,11 +2,14 @@
 toc: true
 comments: false
 layout: post
-title: Tangibles
+title: Plans
 description: What I did this week
 type: Tangible
 course: { compsci: {week: 0} }
 ---
 
-# Tangibles: 
->
+# Plans: 
+Peer Post
+Plans Page
+Hacks Page
+Tangibles Page
