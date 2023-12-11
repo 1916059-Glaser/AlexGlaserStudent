@@ -5,7 +5,7 @@ layout: post
 title: Tangibles
 description: Things I plan to do this week for CSSE
 type: plans
-course: { compsci: {week: 0} }
+courses: { compsci: {week: 0} }
 ---
 
 # Plans:
