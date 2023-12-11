@@ -2,9 +2,9 @@
 toc: true
 comments: false
 layout: post
-title: Tangibles
+title: tangibles
 description: Things I plan to do this week for CSSE
-type: plans
+type: tangibles
 courses: { compsci: {week: 0} }
 ---
 
