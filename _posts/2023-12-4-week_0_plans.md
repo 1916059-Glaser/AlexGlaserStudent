@@ -4,7 +4,7 @@ comments: false
 layout: post
 title: Plans
 description: What I did this week
-type: tangible
+type: tangibles
 course: { compsci: {week: 0} }
 ---
 
