@@ -4,7 +4,7 @@ comments: false
 layout: post
 title: Tangibles
 description: Things I plan to do this week for CSSE
-type: Tangibles
+type: tangibles
 courses: { compsci: {week: 0} }
 ---
 
