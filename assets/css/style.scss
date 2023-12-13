@@ -88,6 +88,50 @@
     background-color: #e70f0f;
   }
 
-  body {
-      background: rgb(13, 73, 21)
+  body {  
+    background-image: linear-gradient(to top right, #142b14, #13a100);
   }
+  h1 {
+    color: none;
+    color: #373737;
+  }
+  .main-content h1 {
+    color: #373737
+  }
+  .main-content h2 {
+    color: #373737
+  }
+  .main-content h3 {
+    color: #373737
+  }
+  .main-content h4 {
+    color: #373737
+  }
+  .main-content h5 {
+    color: #373737
+  }
+  .main-content h6 {
+    color: #373737
+  }
+  a,h2 {
+   color: none;
+    color:#373737;
+  }
+  a,h3 {
+    color:#5e3507;
+  }
+  a,h4 {
+    color:#5e3507;
+  }
+  a,h5 {
+    color:#5e3507;
+  }
+  a,h6 {
+    color:#5e3507;
+  }
+  
+  // Override header background color
+.page-header {
+  background-image: linear-gradient(to bottom left, #331800, #cf8e42);
+}
+
