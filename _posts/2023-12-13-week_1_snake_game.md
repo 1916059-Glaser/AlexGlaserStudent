@@ -2,8 +2,8 @@
 toc: false
 comments: false
 layout: post
-title: Classic Snake Game
-description: A pretty advanced use of JavaScript building classic snake game using menu controls, key events, snake simulation and timers.
+title: Tiger
+description: This game takes place in a multiverse of the classic snake game, a world where a rampage tiger goes around the forest eating boars. 
 type: tangibles
 courses: { compsci: {week: 2} }
 ---
@@ -75,18 +75,18 @@ courses: { compsci: {week: 2} }
 
 <div class="container">
     <header class="pb-3 mb-4 border-bottom border-primary text-dark">
-        <p class="fs-4">Snake score: <span id="score_value">0</span></p>
+        <p class="fs-4">🐗: <span id="score_value">0</span></p>
     </header>
     <div class="container bg-secondary" style="text-align:center;">
         <!-- Main Menu -->
         <div id="menu" class="py-4 text-light">
-            <p>Welcome to Snake, press <span style="background-color: #FFFFFF; color: #000000">space</span> to begin</p>
+            <p>Welcome to Snake, press space to begin. <span style="background-color: #FFFFFF; color: #000000">space</span> to begin</p>
             <a id="new_game" class="link-alert">new game</a>
             <a id="setting_menu" class="link-alert">settings</a>
         </div>
         <!-- Game Over -->
         <div id="gameover" class="py-4 text-light">
-            <p>Game Over, press <span style="background-color: #FFFFFF; color: #000000">space</span> to try again</p>
+            <p>Game Over. <span style="background-color: #FFFFFF; color: #000000">space</span> to try again</p>
             <a id="new_game1" class="link-alert">new game</a>
             <a id="setting_menu1" class="link-alert">settings</a>
         </div>
@@ -370,5 +370,11 @@ courses: { compsci: {week: 2} }
             if(wall === 0){screen_snake.style.borderColor = "#606060";}
             if(wall === 1){screen_snake.style.borderColor = "#FFFFFF";}
         }
+        // color for boar
+        let activedot2 = function(x,y){
+            ctx.fillstyle = "#737373";
+            ctx.fillText("🐗", X * BLOCK, Y * BLOCK + Block);
+        }
+
     })();
 </script>
