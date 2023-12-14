@@ -21,7 +21,7 @@ courses: { compsci: {week: 2} }
         display: none;
         border-style: solid;
         border-width: 10px;
-        border-color: #FFFFFF;
+        border-color: #575857;
     }
     canvas:focus{
         outline: none;
@@ -29,7 +29,7 @@ courses: { compsci: {week: 2} }
 
     /* All screens style */
     #gameover p, #setting p, #menu p{
-        font-size: 20px;
+        font-size: 40px;
     }
 
     #gameover a, #setting a, #menu a{
@@ -67,8 +67,9 @@ courses: { compsci: {week: 2} }
     }
 
     #setting input:checked + label{
-        background-color: #FFF;
-        color: #000;
+        background: #014421;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
     }
 </style>
 
@@ -80,13 +81,13 @@ courses: { compsci: {week: 2} }
     <div class="container bg-secondary" style="text-align:center;">
         <!-- Main Menu -->
         <div id="menu" class="py-4 text-light">
-            <p>Welcome to Snake, press space to begin. <span style="background-color: #FFFFFF; color: #000000">space</span> to begin</p>
+            <p>Welcome to Snake, press space to begin. <span style="background-color: #014421; color: #373737">space</span> to begin</p>
             <a id="new_game" class="link-alert">new game</a>
             <a id="setting_menu" class="link-alert">settings</a>
         </div>
         <!-- Game Over -->
         <div id="gameover" class="py-4 text-light">
-            <p>Game Over. <span style="background-color: #FFFFFF; color: #000000">space</span> to try again</p>
+            <p>Tough Luck, maybe next time you'll do better. Press <span style="background-color: #014421; color: #373737">space</span> to try again</p>
             <a id="new_game1" class="link-alert">new game</a>
             <a id="setting_menu1" class="link-alert">settings</a>
         </div>
@@ -94,7 +95,7 @@ courses: { compsci: {week: 2} }
         <canvas id="snake" class="wrap" width="320" height="320" tabindex="1"></canvas>
         <!-- Settings Screen -->
         <div id="setting" class="py-4 text-light">
-            <p>Settings Screen, press <span style="background-color: #FFFFFF; color: #000000">space</span> to go back to playing</p>
+            <p>Settings Screen, press <span style="background-color: #014421; color: #014421">space</span> to go back to playing</p>
             <a id="new_game2" class="link-alert">new game</a>
             <br>
             <p>Speed:
