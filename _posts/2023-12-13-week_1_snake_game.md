@@ -19,9 +19,6 @@ courses: { compsci: {week: 2} }
 
     canvas{
         display: none;
-        border-style: solid;
-        border-width: 10px;
-        border-color: #575857;
     }
     canvas:focus{
         outline: none;
@@ -42,7 +39,6 @@ courses: { compsci: {week: 2} }
     }
 
     #gameover a:hover::before, #setting a:hover::before, #menu a:hover::before{
-        content: ">";
         margin-right: 10px;
     }
 
@@ -71,6 +67,29 @@ courses: { compsci: {week: 2} }
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
     }
+
+    #score_value {
+        font-size: 40px;
+        text-align:center;
+    }
+
+    .fs-4 {
+        font-size: 40px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .theme-dark {
+        background-color: #014421;
+        color: #FFF;
+    }
+
+    .theme-dark h1 {
+        color: #FFF;
+    }
+    .theme-light {
+        background-color: #FFF
+    }
+
 </style>
 
 
@@ -81,9 +100,9 @@ courses: { compsci: {week: 2} }
     <div class="container bg-secondary" style="text-align:center;">
         <!-- Main Menu -->
         <div id="menu" class="py-4 text-light">
-            <p>Welcome to Snake, press space to begin. <span style="background-color: #014421; color: #373737">space</span> to begin</p>
-            <a id="new_game" class="link-alert">new game</a>
-            <a id="setting_menu" class="link-alert">settings</a>
+            <p>Welcome to Snake, press space to begin.</p>
+            <a id="new_game" class="link-alert" style="fontsize: 20px;">new game</a>
+            <a id="setting_menu" class="link-alert" styple="font-size: 20px; ">settings</a>
         </div>
         <!-- Game Over -->
         <div id="gameover" class="py-4 text-light">
