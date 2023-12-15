@@ -116,14 +116,14 @@ courses: { compsci: {week: 1} }
     <div class="container bg-secondary" style="text-align:center;">
         <!-- Main Menu -->
         <div id="menu" class="py-4 text-light">
-            <p>Press space to begin.</p>
+            <p>Click Start!.</p>
             <a id="new_game" class="link-alert" style="font-size: 20px;">New Game</a>
             <a id="setting_menu" class="link-alert" style="font-size: 20px; ">Settings</a>
         </div>
         <!-- Game Over -->
         <div id="gameover" class="py-4 text-light" style="color: #4B7A47; font-weight: bold;">
             <p style="color:brown
-            ">Game over.</p>
+            ">The Boars have out-smarted you!.</p>
             <a id="new_game1" class="link-alert" style="font-size: 20px; ">New Game</a>
             <a id="setting_menu1" class="link-alert" style="font-size: 20px; ">Settings</a>
         </div>
