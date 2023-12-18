@@ -151,6 +151,14 @@ courses: { compsci: {week: 1} }
                 <label for="wallon">On</label>
                 <input id="walloff" type="radio" name="wall" value="0"/>
                 <label for="walloff">Off</label>
+             </p>
+            <p>
+                <label for="inverted">Inverted Keybinds:</label>
+                <input type="checkbox" id="inverted">
+                <input id="invertedon" type="radio" name="inverted" value="0" checked/>
+                <label for="invertedon">On</label>
+                <input id="invertedoff" type="radio" name="inverted" value="1">
+                <label for="invertedoff">Off</label>
             </p>
         </div>
     </div>
@@ -163,7 +171,12 @@ courses: { compsci: {week: 1} }
 <audio id="winnerSound" src="{{site.baseurl}}/audio/winner.wav" preload="auto"></audio>
 
 
+<!-- JavaScript -->
 <script>
+  // Read the inverted keybinds setting from the UI
+
+  
+
     //disable arrow key scrolling
     window.addEventListener("keydown", function(e) { if(["Space","ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) { e.preventDefault(); } }, false);
 
@@ -459,27 +472,33 @@ courses: { compsci: {week: 1} }
         /* Key Inputs and Actions */
         /////////////////////////////////////////////////////////////
         let changeDir = function(key){
+  const invertedCheckbox = document.getElementById('invertedon');
+  const isInverted = invertedCheckbox.checked;
+            const leftDir = isInverted ? 1 : 3;
+            const rightDir = isInverted ? 3 : 1;
+            const upDir = isInverted ? 2 : 0;
+            const downDir = isInverted ? 0 : 2;
             // test key and switch direction
             switch(key) {
                 case 65:    // A (Left)
                 case 37:
                     if (snake_dir !== 1)    // not right
-                        snake_next_dir = 3; // then switch left
+                        snake_next_dir = leftDir; // then switch left
                     break;
                 case 87:    // W (Up)
                 case 38:
                     if (snake_dir !== 2)    // not down
-                        snake_next_dir = 0; // then switch up
+                        snake_next_dir = upDir; // then switch up
                     break;
                 case 68:    // D (Right)
                 case 39:
                     if (snake_dir !== 3)    // not left
-                        snake_next_dir = 1; // then switch right
+                        snake_next_dir = rightDir; // then switch right
                     break;
                 case 83:    // S (Down)
                 case 40:
                     if (snake_dir !== 0)    // not up
-                        snake_next_dir = 2; // then switch down
+                        snake_next_dir = downDir; // then switch down
                     break;
             }
         }
