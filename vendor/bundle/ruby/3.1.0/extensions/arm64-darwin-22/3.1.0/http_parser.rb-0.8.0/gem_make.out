@@ -1,0 +1,21 @@
+current directory: /Users/alx/Git/AlexGlaserStudent/vendor/bundle/ruby/3.1.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
+/Users/alx/.rbenv/versions/3.1.4/bin/ruby -I /Users/alx/.rbenv/versions/3.1.4/lib/ruby/3.1.0 extconf.rb
+creating Makefile
+
+current directory: /Users/alx/Git/AlexGlaserStudent/vendor/bundle/ruby/3.1.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
+make DESTDIR\= sitearchdir\=./.gem.20240108-42300-o7jzay sitelibdir\=./.gem.20240108-42300-o7jzay clean
+
+current directory: /Users/alx/Git/AlexGlaserStudent/vendor/bundle/ruby/3.1.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
+make DESTDIR\= sitearchdir\=./.gem.20240108-42300-o7jzay sitelibdir\=./.gem.20240108-42300-o7jzay
+compiling ruby_http_parser.c
+ruby_http_parser.c:365:17: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'long' [-Wsign-compare]
+    if (nparsed < len)
+        ~~~~~~~ ^ ~~~
+1 warning generated.
+compiling ryah_http_parser.c
+linking shared-object ruby_http_parser.bundle
+ld: warning: ignoring duplicate libraries: '-lruby.3.1'
+
+current directory: /Users/alx/Git/AlexGlaserStudent/vendor/bundle/ruby/3.1.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
+make DESTDIR\= sitearchdir\=./.gem.20240108-42300-o7jzay sitelibdir\=./.gem.20240108-42300-o7jzay install
+/usr/bin/install -c -m 0755 ruby_http_parser.bundle ./.gem.20240108-42300-o7jzay
