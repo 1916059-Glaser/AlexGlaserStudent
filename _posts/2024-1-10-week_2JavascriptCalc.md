@@ -1,13 +1,11 @@
 ---
-title: JS Calculator
-comments: true
-hide: true
-layout: default
-description: A common way to become familiar with a language is to build a calculator.  This calculator shows off button with actions.
-permalink: /techtalk/home_style
-categories: [C7.0]
-courses: { csse: {week: 2}, csp: {week: 2, categories: [2.C]}, csa: {week: 2} }
-type: ccc
+toc: false
+comments: false
+layout: post
+title: Javascript Calculator
+description: A modified caluclator with the added square root button, division button, and a new theme making it more pleasent for the eyes too look upon. 
+type: tangibles
+courses: { compsci: {week: 3} }
 ---
 
 <!-- 
@@ -36,7 +34,7 @@ HTML implementation of the calculator.
       result to take up the entirety of the first row;
       span defines 4 columns and 1 row
     */
-    grid-column: span 4;
+    grid-column: span 2;
     grid-row: span 1;
   
     border-radius: 10px;
@@ -55,26 +53,29 @@ HTML implementation of the calculator.
       <!--result-->
       <div class="calculator-output" id="output">0</div>
       <!--row 1-->
+      <div class="calculator-clear">A/C</div>
+      <div class="calculator-equals">=</div>
       <div class="calculator-number">1</div>
       <div class="calculator-number">2</div>
+      <!--row 2-->
       <div class="calculator-number">3</div>
       <div class="calculator-operation">+</div>
-      <!--row 2-->
       <div class="calculator-number">4</div>
       <div class="calculator-number">5</div>
+      <!--row 3-->
       <div class="calculator-number">6</div>
       <div class="calculator-operation">-</div>
-      <!--row 3-->
       <div class="calculator-number">7</div>
       <div class="calculator-number">8</div>
+      <!--row 4-->
       <div class="calculator-number">9</div>
       <div class="calculator-operation">*</div>
-      <!--row 4-->
-      <div class="calculator-clear">A/C</div>
-      <div class="calculator-number">0</div>
       <div class="calculator-number">.</div>
-      <div class="calculator-equals">=</div>
-  </div>
+      <div class="calculator-number">0</div>
+      <!--row 4-->
+      <div class="calculator-operation">/</div>
+      <div class="calculator-operation">sqrt(x)</div>
+  </div>s
 </div>
 
 <!-- JavaScript (JS) implementation of the calculator. -->
@@ -153,6 +154,9 @@ function calculate (first, second) { // function to calculate the result of the 
             break;
         case "/":
             result = first / second;
+            break;
+        case "sqrt(x)":
+            result = first^1/2;
             break;
         default: 
             break;

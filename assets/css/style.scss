@@ -69,6 +69,7 @@
   /* styling for the calculator number button */
   .calculator-number {
     @extend .button;
+    background-color: #143214
   }
 
   /* styling for the calculator operation button */
@@ -79,17 +80,17 @@
   /* styling for the calculator clear button */
   .calculator-clear {
     @extend .button;
-    background-color: #e68b1c;
+    background-color: #dbc221;
   }
   
   /* styling for the calculator equals button */
   .calculator-equals {
     @extend .button;
-    background-color: #e70f0f;
+    background-color: #0d0782;
   }
 
   body {  
-    background-image: linear-gradient(to top right, #142b14, #13a100);
+    background-image: linear-gradient(to top right, #3b2208, #13a100);
   }
   h1 {
     color: none;
