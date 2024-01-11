@@ -3,7 +3,7 @@ toc: false
 comments: false
 layout: post
 title: Javascript Calculator
-description: A modified caluclator with the added square root button, division button, and a new theme making it more pleasent for the eyes too look upon. 
+description: A modified caluclator with the added factorial button, division button, and a new theme making it more pleasent for the eyes too look upon. 
 type: tangibles
 courses: { compsci: {week: 3} }
 ---
@@ -19,7 +19,6 @@ Hack 3: Implement 1 number operation (ie SQRT)
 HTML implementation of the calculator. 
 -->
 
-{% include nav_home.html %}
 
 <!-- 
     Style and Action are aligned with HRML class definitions
@@ -37,10 +36,10 @@ HTML implementation of the calculator.
     grid-column: span 2;
     grid-row: span 1;
   
-    border-radius: 10px;
+    border-radius: 10px; box-shadow: 0px 0px 30px #00FF00;
     padding: 0.25em;
     font-size: 20px;
-    border: 5px solid black;
+    border: 5px solid black; 
   
     display: flex;
     align-items: center;
@@ -74,7 +73,7 @@ HTML implementation of the calculator.
       <div class="calculator-number">0</div>
       <!--row 4-->
       <div class="calculator-operation">/</div>
-      <div class="calculator-operation">sqrt(x)</div>
+      <div class="calculator-operation">x^3</div>
   </div>s
 </div>
 
@@ -155,8 +154,8 @@ function calculate (first, second) { // function to calculate the result of the 
         case "/":
             result = first / second;
             break;
-        case "sqrt(x)":
-            result = first^1/2;
+        case "x^3":
+            result = first * first * first;
             break;
         default: 
             break;
@@ -193,23 +192,7 @@ function clearCalc () { // clears calculator
 }
 </script>
 
-<!-- 
-Vanta animations just for fun, load JS onto the page
--->
-<script src="{{site.baseurl}}/assets/js/three.r119.min.js"></script>
-<script src="{{site.baseurl}}/assets/js/vanta.halo.min.js"></script>
-<script src="{{site.baseurl}}/assets/js/vanta.birds.min.js"></script>
-<script src="{{site.baseurl}}/assets/js/vanta.net.min.js"></script>
-<script src="{{site.baseurl}}/assets/js/vanta.rings.min.js"></script>
 
-<script>
-// setup vanta scripts as functions
-var vantaInstances = {
-  halo: VANTA.HALO,
-  birds: VANTA.BIRDS,
-  net: VANTA.NET,
-  rings: VANTA.RINGS
-};
 
 // obtain a random vanta function
 var vantaInstance = vantaInstances[Object.keys(vantaInstances)[Math.floor(Math.random() * Object.keys(vantaInstances).length)]];
