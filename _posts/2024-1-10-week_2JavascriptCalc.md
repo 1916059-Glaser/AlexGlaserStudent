@@ -191,9 +191,7 @@ function clearCalc () { // clears calculator
     nextReady = true;
 }
 </script>
-
-
-
+<script>
 // obtain a random vanta function
 var vantaInstance = vantaInstances[Object.keys(vantaInstances)[Math.floor(Math.random() * Object.keys(vantaInstances).length)]];
 
