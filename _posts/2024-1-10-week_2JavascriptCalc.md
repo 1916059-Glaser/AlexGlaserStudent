@@ -72,7 +72,7 @@ HTML implementation of the calculator.
       <div class="calculator-number">.</div>
       <div class="calculator-number">0</div>
       <!--row 4-->
-      <div class="calculator-operation">/</div>
+      <div class="calculator-operation">x^2</div>
       <div class="calculator-operation">x^3</div>
   </div>s
 </div>
@@ -151,8 +151,8 @@ function calculate (first, second) { // function to calculate the result of the 
         case "*":
             result = first * second;
             break;
-        case "/":
-            result = first / second;
+        case "x^2":
+            result = first * first;
             break;
         case "x^3":
             result = first * first * first;
