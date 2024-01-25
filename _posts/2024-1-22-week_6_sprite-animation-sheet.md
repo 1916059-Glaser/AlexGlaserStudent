@@ -31,7 +31,7 @@ courses: { compsci: {week: 3} }
         const canvas = document.getElementById('spriteContainer');
         const ctx = canvas.getContext('2d');
         const SPRITE_WIDTH = 110;  // matches sprite pixel width
-        const SPRITE_HEIGHT = 120; // matcshes sprite pixel height
+        const SPRITE_HEIGHT = 130; // matcshes sprite pixel height
         const FRAME_LIMIT = 3;  // matches number of frames per sprite row, this code assume each row is same
 
         const SCALE_FACTOR = 2;  // control size of sprite on canvas
@@ -88,11 +88,11 @@ courses: { compsci: {week: 3} }
                         snake.frameX = 1.5;
                         break;
                     case 'idle':
-                        snake.frameY = 1.05;
+                        snake.frameY = 1.075;
                         snake.frameX = 1;
                         break;
                     case 'attack':
-                        snake.frameY = 2.5;
+                        snake.frameY = 2.3;
                         snake.frameX = 1;
                         break;
                     default:
